@@ -30,6 +30,40 @@ int Time::setsec(int sec)
 	time_.tm_sec = (sec > 61) ? (sec % 60) : sec;
 	return time_.tm_sec;
 }
+int Time::setisdst(int isdst)
+{
+	time_.tm_isdst = isdst;
+	return time_.tm_isdst;
+}
+
+int Time::getyear()
+{
+	return time_.tm_year;
+}
+int Time::getmon()
+{
+	return time_.tm_mon;
+}
+int Time::getmday()
+{
+	return time_.tm_mday;
+}
+int Time::gethour()
+{
+	return time_.tm_hour;
+}
+int Time::getmin()
+{
+	return time_.tm_min;
+}
+int Time::getsec()
+{
+	return time_.tm_sec;
+}
+int Time::getisdst()
+{
+	return time_.tm_isdst;
+}
 
 Time::Time()
 {
