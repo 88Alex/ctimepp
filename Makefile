@@ -1,4 +1,4 @@
 %.o: %.cpp
-    g++ -0 $<
+    g++ -o $<
 ctimepp: ctimepp.o
     # IGNORE
